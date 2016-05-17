@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/alltitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:gravity="center"
+        android:text="二维码的识别与生成"
+        android:textSize="50px"
+        android:textColor="@color/titlecolor"/>
+    <TextView
+        android:id="@+id/title1"
+        android:layout_below="@+id/alltitle"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="left"
+        android:text="   1.二维码的识别"
+        android:textSize="30px"
+        android:textColor="@color/titlecolor"/>
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:text="扫描二维码"
+        android:gravity="center"
+        android:id="@+id/main_scan"
+        android:layout_below="@+id/title1"
+        />
+    <TextView
+        android:id="@+id/title2"
+        android:layout_below="@+id/main_scan"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="left"
+        android:text="   2.二维码的生成"
+        android:textSize="30px"
+        android:textColor="@color/titlecolor"/>
+    <EditText 
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title2"
+        android:layout_marginBottom="60dip"
+        android:gravity="top"
+        />
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentBottom="true"
+        >
+        <Button 
+            android:id="@+id/create"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="生成二维码"
+            />
+        <Button 
+            android:id="@+id/cancel"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="取消"
+            />
+        
+        
+    </LinearLayout>
+    
+
+</RelativeLayout>
